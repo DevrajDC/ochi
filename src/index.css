@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "FoundersGroteskCondensed";
+  src: url("../src/assets/fonts/FoundersGrotesk-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "NueueMontreal";
+  src: url("../src/assets/fonts/NeueMontreal-Regular.ttf");
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-NueueMontreal;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  /* ... */
+}
