@@ -1,19 +1,34 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 function HeroSection() {
   return (
-    <div className="h-screen w-full bg-zinc-900 pt-1">
-      <div className="textstructure mt-40 px-20">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-0.3"
+      className="w-full bg-zinc-900 pt-40 pb-20"
+    >
+      <div className="textstructure px-20">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
           <div className="masker">
             <div className="w-fit flex items-end overflow-hidden">
               {index === 1 && (
-                <div className="w-[120px] h-[85px] mr-5 rounded-lg bg-green-500"></div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "120px" }}
+                  transition={{
+                    ease: [0.76, 0, 0.24, 1],
+                    duration: 1,
+                    delay: 1,
+                  }}
+                  className="w-[120px] h-[85px] mr-5 rounded-lg bg-green-500"
+                ></motion.div>
               )}
               <h1
                 key={index}
-                className="font-FoundersGroteskCondensed text-9xl font-light uppercase leading-[100px] h-full"
+                className="font-FoundersGroteskCondensed md:text-9xl sm:text-6xl text-3xl font-light uppercase md:leading-[100px] h-full"
               >
                 {item}
               </h1>
@@ -31,7 +46,7 @@ function HeroSection() {
           </p>
         ))}
         <div className="start flex items-center gap-4">
-          <div className="rounded-full border-[1px] border-zinc-500 px-5 py-2 text-sm font-light uppercase">
+          <div className="rounded-full border-[1px] font-NueueMontreal border-zinc-500 px-5 py-2 text-sm font-light uppercase">
             Start the Project
           </div>
           <div className="flex h-10 w-10 items-center justify-center rounded-full border-[1px] border-zinc-500">
