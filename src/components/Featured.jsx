@@ -17,17 +17,17 @@ function Featured() {
     });
   };
   return (
-    <div className="container m-auto py-20 pb-0">
-      <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-12">
-        <h1 className="text-6xl">Featured Projects</h1>
+    <div className="container w-full sm:pt-20 pt-10">
+      <div className="w-full border-b-[1px] border-zinc-700 pb-5">
+        <h1 className="text-4xl sm:text-6xl">Featured Projects</h1>
       </div>
-      <div className="px-20 py-12 cards w-full flex flex-col md:flex-row gap-10">
+      <div className="py-10 cards w-full flex flex-col md:flex-row gap-10">
         <motion.div
           onHoverStart={() => handleHoverStart(0)}
           onHoverEnd={() => handleHoverEnd(0)}
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-fit"
         >
-          <h1 className="absolute text-[#CDEA68] flex overflow-hidden left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl font-NueueMontreal leading-none tracking-tighter">
+          <h1 className="absolute text-[#CDEA68] flex overflow-hidden left-1/2 sm:left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl font-NueueMontreal leading-none tracking-tighter">
             {"FIDE".split("").map((item, index) => (
               <motion.span
                 initial={{ y: "100%" }}
@@ -53,7 +53,7 @@ function Featured() {
           onHoverEnd={() => handleHoverEnd(1)}
           className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-auto"
         >
-          <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl font-NueueMontreal leading-none tracking-tighter">
+          <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-1/2 sm:right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl font-NueueMontreal leading-none tracking-tighter">
             {"VISE".split("").map((item, index) => (
               <motion.span
                 initial={{ y: "100%" }}
@@ -75,7 +75,7 @@ function Featured() {
           </div>
         </motion.div>
       </div>
-      <div className="m-auto rounded-full flex gap-2 justify-center mt-4 w-fit bg-[#004D43] font-NueueMontreal text-zinc-100 px-10 py-3 text-sm tracking-wider font-semibold uppercase">
+      <div className="m-auto rounded-full flex gap-2 justify-center w-fit bg-[#004D43] font-NueueMontreal text-zinc-100 px-10 py-3 text-sm tracking-wider uppercase">
         See all Projects
         <FaArrowUpLong className="rotate-45 origin-center translate-y-[2px]" />
       </div>

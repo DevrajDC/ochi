@@ -8,9 +8,9 @@ function HeroSection() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-0.3"
-      className="w-full bg-zinc-900 pt-40 pb-20"
+      className="container w-full"
     >
-      <div className="textstructure px-20">
+      <div className="textstructure py-40">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
           <div className="masker">
             <div className="w-fit flex items-end overflow-hidden">
@@ -36,17 +36,20 @@ function HeroSection() {
           </div>
         ))}
       </div>
-      <div className="mt-20 flex items-center justify-between border-t-[1px] border-zinc-800 px-20 py-5 font-NueueMontreal">
+      <div className="flex items-center justify-between border-t-[1px] border-zinc-800 py-5 font-NueueMontreal">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
-          <p key={index} className="text-md font-light leading-none">
+          <p
+            key={index}
+            className="text-base font-light leading-none hidden sm:block"
+          >
             {item}
           </p>
         ))}
         <div className="start flex items-center gap-4">
-          <div className="rounded-full border-[1px] font-NueueMontreal border-zinc-500 px-5 py-2 text-sm font-light uppercase">
+          <div className="rounded-full border-[1px] font-NueueMontreal border-zinc-500 px-5 py-2 text-sm font-light whitespace-nowrap uppercase">
             Start the Project
           </div>
           <div className="flex h-10 w-10 items-center justify-center rounded-full border-[1px] border-zinc-500">

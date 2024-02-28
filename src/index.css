@@ -12,12 +12,20 @@
   src: url("../src/assets/fonts/NeueMontreal-Regular.ttf");
 }
 
-@layer base {
-  h1 {
-    @apply text-4xl font-NueueMontreal;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  /* ... */
+* {
+  font-family: "NueueMontreal", sans-serif;
 }
+
+/* html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+} */
+
+/* @media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+} */
