@@ -10,25 +10,25 @@ function HeroSection() {
       data-scroll-speed="-0.3"
       className="container w-full"
     >
-      <div className="textstructure py-40">
+      <div className="textstructure py-[10vh]">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
           <div className="masker">
-            <div className="w-fit flex items-end overflow-hidden">
+            <div className="w-fit flex items-center overflow-hidden">
               {index === 1 && (
                 <motion.div
                   initial={{ width: 0 }}
-                  animate={{ width: "120px" }}
+                  animate={{ width: "16vw" }}
                   transition={{
                     ease: [0.76, 0, 0.24, 1],
                     duration: 1,
                     delay: 1,
                   }}
-                  className="w-[120px] h-[85px] mr-5 rounded-lg bg-green-500"
+                  className="w-[8vw] h-[5vh] sm:h-[6vh] sm:w-[5vw] sm:mt-5 mr-5 rounded-md bg-green-500"
                 ></motion.div>
               )}
               <h1
                 key={index}
-                className="font-FoundersGroteskCondensed md:text-9xl sm:text-6xl text-3xl font-light uppercase md:leading-[100px] h-full"
+                className="font-FoundersGroteskCondensed sm:-mb-[1vw] md:text-[10vw] sm:text-[12vw] text-[16vw] uppercase whitespace-nowrap leading-none h-full"
               >
                 {item}
               </h1>
