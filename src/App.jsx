@@ -11,7 +11,11 @@ import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
   // Locomotive Scroll
-  const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll({
+    lenisOptions: {
+      smoothTouch: true,
+    },
+  });
 
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-white bg-zinc-900">
