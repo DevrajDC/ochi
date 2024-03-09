@@ -21,12 +21,12 @@ function Eyes() {
   });
 
   return (
-    <div className="eyes w-full h-[400px] md:h-[800px] overflow-hidden">
+    <div className="eyes w-full h-[300px] md:h-[800px] overflow-hidden">
       <div
         data-scroll
         data-scroll-section
         data-scroll-speed="-0.5"
-        className="w-full relative h-screen bg-cover bg-center bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]"
+        className="w-full relative h-[300px] sm:h-screen bg-cover bg-center bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]"
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           <div className="w-[24vw] md:w-[15vw] h-[24vw] md:h-[15vw] flex items-center justify-center bg-zinc-100 rounded-full">

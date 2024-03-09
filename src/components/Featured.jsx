@@ -25,8 +25,12 @@ function Featured() {
         <motion.div
           onHoverStart={() => handleHoverStart(0)}
           onHoverEnd={() => handleHoverEnd(0)}
-          className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-fit"
+          className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
+          <h1 className="mb-4 flex gap-2 items-center tracking-wide">
+            <span className="w-2 h-2 bg-zinc-50 rounded-full"></span> FIDE - Web
+            Design Agency
+          </h1>
           <h1 className="absolute text-[#CDEA68] flex overflow-hidden left-1/2 sm:left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl font-NueueMontreal leading-none tracking-tighter">
             {"FIDE".split("").map((item, index) => (
               <motion.span
@@ -40,9 +44,9 @@ function Featured() {
               </motion.span>
             ))}
           </h1>
-          <div className="card w-full rounded-xl overflow-hidden">
+          <div className="card w-full h-[300px] flex items-center rounded-xl overflow-hidden">
             <img
-              className="w-full "
+              className="w-full h-auto object-cover hover:scale-105 transition-all"
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4f077er9cq2y21uzfa6g.png"
               alt="featured"
             />
@@ -51,8 +55,12 @@ function Featured() {
         <motion.div
           onHoverStart={() => handleHoverStart(1)}
           onHoverEnd={() => handleHoverEnd(1)}
-          className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-auto"
+          className="cardcontainer cursor-pointer relative md:w-1/2 w-full h-full"
         >
+          <h1 className="mb-4 flex gap-2 items-center tracking-wide">
+            <span className="w-2 h-2 bg-zinc-50 rounded-full"></span> FIDE - Web
+            Design Agency
+          </h1>
           <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-1/2 sm:right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-8xl font-NueueMontreal leading-none tracking-tighter">
             {"VISE".split("").map((item, index) => (
               <motion.span
@@ -66,9 +74,9 @@ function Featured() {
               </motion.span>
             ))}
           </h1>
-          <div className="card w-full h-full rounded-xl overflow-hidden">
+          <div className="card w-full h-[300px] flex items-center rounded-xl overflow-hidden">
             <img
-              className="w-full h-full bg-cover"
+              className="w-full h-auto object-cover hover:scale-105 transition-all"
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pczeaazxnqv1zpc1z4dz.png"
               alt="featured"
             />

@@ -12,7 +12,7 @@ function HeroSection() {
     >
       <div className="textstructure py-[10vh]">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
-          <div className="masker">
+          <div key={index} className="masker">
             <div className="w-fit flex items-center overflow-hidden">
               {index === 1 && (
                 <motion.div

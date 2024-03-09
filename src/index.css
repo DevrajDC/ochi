@@ -16,6 +16,10 @@
   font-family: "NueueMontreal", sans-serif;
 }
 
+:root {
+  color-scheme: dark;
+}
+
 /* html,
 body {
   width: 100vw;

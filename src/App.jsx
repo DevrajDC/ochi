@@ -14,11 +14,12 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
       smoothTouch: true,
+      touchMultiplier: 1,
     },
   });
 
   return (
-    <div className="w-full min-h-screen bg-zinc-900 text-white bg-zinc-900">
+    <div className="w-full min-h-screen bg-zinc-900 text-white">
       <Navbar />
       <HeroSection />
       <Marquee />
